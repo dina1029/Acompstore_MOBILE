@@ -63,7 +63,7 @@ public class RegisterAlamatActivity extends AppCompatActivity {
             checknull = false;
         }else if(bind.regalCheck.isChecked()==false){
             head = "Centang Persetujuan";
-            body = "Centang persetujuan jika anda menyutujui penggunaan aplikasi ini";
+            body = "Centang persetujuan jika anda menyutujui peraturan aplikasi ini";
         }
         else{
             ServiceRegisterLogin service = Apiretro.getService().create(ServiceRegisterLogin.class);

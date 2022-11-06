@@ -18,13 +18,22 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".cobaactivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".pActivity.RegisterAlamatActivity"
             android:exported="false" />
         <activity
             android:name=".pActivity.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.LoginActivity"
+            android:name=".pActivity.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

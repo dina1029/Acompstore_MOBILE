@@ -11,13 +11,22 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius3.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/strokeradius15.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/font/fonts.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cobaactivity.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_home.xml" value="0.21" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register_alamat.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_setting_fragment.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/error_null_dialog.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_history.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_home.xml" value="0.21" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_notification.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register_alamat.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_setting.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/menu/home_menu.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>

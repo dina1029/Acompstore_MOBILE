@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -30,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     boolean checknull = false;
     AppCompatButton nullbterror;
     TextView nullEmail;
+    SharedPreferences shared;
 
 
     @Override
@@ -74,6 +76,10 @@ public class LoginActivity extends AppCompatActivity {
                 public void onResponse(Call<ResponsePost> call, Response<ResponsePost> response) {
                     byte kode = response.body().getKode();
                     if (kode == 1) {
+                        shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = shared.edit();
+                        editor.putBoolean("status", true);
+                        editor.commit();
                         Toast.makeText(LoginActivity.this, "Berhasil Login", Toast.LENGTH_SHORT).show();
                     } else if (kode == 0) {
                         Toast.makeText(LoginActivity.this, "Gagal Login", Toast.LENGTH_SHORT).show();
