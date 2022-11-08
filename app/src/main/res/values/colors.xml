@@ -8,5 +8,6 @@
     <color name="younggray">#B4B4B4</color>
     <color name="yellow">#FFD600</color>
     <color name="red">#EA2D3F</color>
+    <color name="backgray">#F2F2F2</color>
     <color name="transparent">#0000ffff</color>
 </resources>
