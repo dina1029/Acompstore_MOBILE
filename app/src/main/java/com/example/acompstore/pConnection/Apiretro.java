@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Apiretro {
     public static final String public_idPembeli= "1";
-    public static String base_url = "http://172.16.109.251/acompstore/";
+    public static String base_url = "http://192.168.1.2/acompstore/";
     private static Retrofit retro;
 
     public static Retrofit getService(){

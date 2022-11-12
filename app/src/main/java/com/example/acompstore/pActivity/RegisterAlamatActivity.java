@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,7 +15,7 @@ import android.widget.Toast;
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityRegisterAlamatBinding;
 import com.example.acompstore.pConnection.Apiretro;
-import com.example.acompstore.pResponse.ResponsePost;
+import com.example.acompstore.pResponse.ResponsePostPembeli;
 import com.example.acompstore.pService.ServiceRegisterLogin;
 
 import retrofit2.Call;
@@ -27,6 +29,7 @@ public class RegisterAlamatActivity extends AppCompatActivity {
     AppCompatButton nullbterror;
     TextView nullEmail, nullDesk;
     AlertDialog alert;
+    SharedPreferences shared;
     boolean checknull = false;
 
     @Override
@@ -64,26 +67,32 @@ public class RegisterAlamatActivity extends AppCompatActivity {
         }else if(bind.regalCheck.isChecked()==false){
             head = "Centang Persetujuan";
             body = "Centang persetujuan jika anda menyutujui peraturan aplikasi ini";
+            checknull = false;
         }
         else{
             ServiceRegisterLogin service = Apiretro.getService().create(ServiceRegisterLogin.class);
-            Call<ResponsePost> simpan = service.registerPembeli(email, nama, phone, pass,
+            Call<ResponsePostPembeli> simpan = service.registerPembeli(email, nama, phone, pass,
                     bind.regalKota.getText().toString(), bind.regalKecamatan.getText().toString(),
                     bind.regalAlamat.getText().toString());
-            simpan.enqueue(new Callback<ResponsePost>() {
+            simpan.enqueue(new Callback<ResponsePostPembeli>() {
                 @Override
-                public void onResponse(Call<ResponsePost> call, Response<ResponsePost> response) {
+                public void onResponse(Call<ResponsePostPembeli> call, Response<ResponsePostPembeli> response) {
                     byte kode = response.body().getKode();
                     if (kode == 1) {
-                        Toast.makeText(RegisterAlamatActivity.this, "Berhasil Register", Toast.LENGTH_SHORT).show();
+                        shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = shared.edit();
+                        editor.putBoolean("status", true);
+                        editor.commit();
+                        startActivity(new Intent(RegisterAlamatActivity.this, HomeActivity.class));
+                        finish();
                     } else if (kode == 0) {
                         Toast.makeText(RegisterAlamatActivity.this, "Gagal Register", Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
-                public void onFailure(Call<ResponsePost> call, Throwable t) {
-
+                public void onFailure(Call<ResponsePostPembeli> call, Throwable t) {
+                    Toast.makeText(RegisterAlamatActivity.this, "Server Error : " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
             checknull = true;

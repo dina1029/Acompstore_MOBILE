@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityLoginBinding;
 import com.example.acompstore.pConnection.Apiretro;
-import com.example.acompstore.pResponse.ResponsePost;
+import com.example.acompstore.pResponse.ResponsePostPembeli;
 import com.example.acompstore.pService.ServiceRegisterLogin;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     AlertDialog alert;
     boolean checknull = false;
     AppCompatButton nullbterror;
-    TextView nullEmail;
+    TextView nullEmail, forgot;
     SharedPreferences shared;
 
 
@@ -40,6 +40,13 @@ public class LoginActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login);
         password = binding.loginPassword;
         email = binding.loginEmail;
+        forgot = binding.loginForgot;
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
+            }
+        });
         binding.loginBtlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,24 +77,25 @@ public class LoginActivity extends AppCompatActivity {
             email = binding.loginEmail;
             password = binding.loginPassword;
             ServiceRegisterLogin service = Apiretro.getService().create(ServiceRegisterLogin.class);
-            Call<ResponsePost> simpan = service.setLogin(email.getText().toString(), password.getText().toString());
-            simpan.enqueue(new Callback<ResponsePost>() {
+            Call<ResponsePostPembeli> simpan = service.setLogin(email.getText().toString(), password.getText().toString());
+            simpan.enqueue(new Callback<ResponsePostPembeli>() {
                 @Override
-                public void onResponse(Call<ResponsePost> call, Response<ResponsePost> response) {
+                public void onResponse(Call<ResponsePostPembeli> call, Response<ResponsePostPembeli> response) {
                     byte kode = response.body().getKode();
                     if (kode == 1) {
                         shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
                         SharedPreferences.Editor editor = shared.edit();
                         editor.putBoolean("status", true);
                         editor.commit();
-                        Toast.makeText(LoginActivity.this, "Berhasil Login", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                        finish();
                     } else if (kode == 0) {
                         Toast.makeText(LoginActivity.this, "Gagal Login", Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
-                public void onFailure(Call<ResponsePost> call, Throwable t) {
+                public void onFailure(Call<ResponsePostPembeli> call, Throwable t) {
                     Toast.makeText(getApplicationContext(), "Error server : " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });

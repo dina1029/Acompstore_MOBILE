@@ -2,17 +2,17 @@ package com.example.acompstore.pModel;
 
 public class ModelPembeli {
 
-    int idPembeli;
-    String NamaPembeli;
-    String NoHPPembeli;
-    String EmailPembeli;
-    String PasswordPembeli;
+    private String idPembeli;
+    private String NamaPembeli;
+    private String NoHPPembeli;
+    private String EmailPembeli;
+    private String PasswordPembeli;
 
-    public int getIdPembeli() {
+    public String getIdPembeli() {
         return idPembeli;
     }
 
-    public void setIdPembeli(int idPembeli) {
+    public void setIdPembeli(String idPembeli) {
         this.idPembeli = idPembeli;
     }
 
@@ -51,11 +51,11 @@ public class ModelPembeli {
     public ModelPembeli() {
     }
 
-    public ModelPembeli(int idPembeli, String namaPembeli, String noHPPembeli, String emailPembeli, String passwordPembeli) {
+    public ModelPembeli(String idPembeli, String namaPembeli, String noHPPembeli, String emailPembeli, String passwordPembeli) {
         this.idPembeli = idPembeli;
-        NamaPembeli = namaPembeli;
-        NoHPPembeli = noHPPembeli;
-        EmailPembeli = emailPembeli;
-        PasswordPembeli = passwordPembeli;
+        this.NamaPembeli = namaPembeli;
+        this.NoHPPembeli = noHPPembeli;
+        this.EmailPembeli = emailPembeli;
+        this.PasswordPembeli = passwordPembeli;
     }
 }

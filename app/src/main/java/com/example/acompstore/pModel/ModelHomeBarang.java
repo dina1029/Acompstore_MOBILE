@@ -1,12 +1,13 @@
 package com.example.acompstore.pModel;
 
 public class ModelHomeBarang {
-    String idKategori;
-    String idbarang;
-    String NamaBarang;
-    String HargaKategori;
-    String Gambar;
-    String Terjual;
+    private String idKategori;
+    private String idBarang;
+    private String NamaBarang;
+    private String HargaKategori;
+    private String Gambar;
+    private String Terjual;
+    private String DeskripsiBarang;
 
     public String getIdKategori() {
         return idKategori;
@@ -16,12 +17,12 @@ public class ModelHomeBarang {
         this.idKategori = idKategori;
     }
 
-    public String getIdbarang() {
-        return idbarang;
+    public String getIdBarang() {
+        return idBarang;
     }
 
-    public void setIdbarang(String idbarang) {
-        this.idbarang = idbarang;
+    public void setIdBarang(String idBarang) {
+        this.idBarang = idBarang;
     }
 
     public String getNamaBarang() {
@@ -56,15 +57,25 @@ public class ModelHomeBarang {
         Terjual = terjual;
     }
 
+    public String getDeskripsiBarang() {
+        return DeskripsiBarang;
+    }
+
+    public void setDeskripsiBarang(String deskripsiBarang) {
+        DeskripsiBarang = deskripsiBarang;
+    }
+
     public ModelHomeBarang() {
     }
 
-    public ModelHomeBarang(String idKategori, String idbarang, String namaBarang, String hargaKategori, String gambar, String terjual) {
+    public ModelHomeBarang(String idKategori, String idBarang, String namaBarang, String hargaKategori, String gambar, String terjual, String deskripsiBarang) {
         this.idKategori = idKategori;
-        this.idbarang = idbarang;
+        this.idBarang = idBarang;
         NamaBarang = namaBarang;
         HargaKategori = hargaKategori;
         Gambar = gambar;
         Terjual = terjual;
+        DeskripsiBarang = deskripsiBarang;
     }
+
 }
