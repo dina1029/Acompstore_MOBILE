@@ -119,6 +119,7 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
     @Override
     public void onItemClick(int position) {
         adapter.setSelectedPosition(position);
+        adapter.getSelectedPosition();
         bind.debarHarga.setText(list.get(position).getHargaKategori());
         bind.debarStok.setText(list.get(position).getStok());
 
