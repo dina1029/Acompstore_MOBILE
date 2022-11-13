@@ -174,6 +174,8 @@ public class HomeFragment extends Fragment implements AdapterItemClick {
         intent.putExtra("idKategori", list.get(position).getIdKategori());
         intent.putExtra("nama", list.get(position).getNamaBarang());
         intent.putExtra("harga", list.get(position).getHargaKategori());
+        intent.putExtra("stok", list.get(position).getStok());
+        intent.putExtra("diskon", list.get(position).getDiskon());
         startActivity(intent);
     }
 }

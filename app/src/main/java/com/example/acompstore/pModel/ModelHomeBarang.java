@@ -6,6 +6,8 @@ public class ModelHomeBarang {
     private String NamaBarang;
     private String HargaKategori;
     private String Gambar;
+    private String Stok;
+    private String Diskon;
     private String Terjual;
     private String DeskripsiBarang;
 
@@ -49,6 +51,22 @@ public class ModelHomeBarang {
         Gambar = gambar;
     }
 
+    public String getStok() {
+        return Stok;
+    }
+
+    public void setStok(String stok) {
+        Stok = stok;
+    }
+
+    public String getDiskon() {
+        return Diskon;
+    }
+
+    public void setDiskon(String diskon) {
+        Diskon = diskon;
+    }
+
     public String getTerjual() {
         return Terjual;
     }
@@ -68,14 +86,15 @@ public class ModelHomeBarang {
     public ModelHomeBarang() {
     }
 
-    public ModelHomeBarang(String idKategori, String idBarang, String namaBarang, String hargaKategori, String gambar, String terjual, String deskripsiBarang) {
+    public ModelHomeBarang(String idKategori, String idBarang, String namaBarang, String hargaKategori, String gambar, String stok, String diskon, String terjual, String deskripsiBarang) {
         this.idKategori = idKategori;
         this.idBarang = idBarang;
         NamaBarang = namaBarang;
         HargaKategori = hargaKategori;
         Gambar = gambar;
+        Stok = stok;
+        Diskon = diskon;
         Terjual = terjual;
         DeskripsiBarang = deskripsiBarang;
     }
-
 }

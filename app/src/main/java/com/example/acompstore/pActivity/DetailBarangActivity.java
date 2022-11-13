@@ -13,6 +13,7 @@ import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityDetailBarangBinding;
 import com.example.acompstore.pAdapter.AdapterDetailKategori;
 import com.example.acompstore.pAdditional.AdapterItemClick;
+import com.example.acompstore.pAdditional.CurrencyModel;
 import com.example.acompstore.pAdditional.ImageConvertModel;
 import com.example.acompstore.pConnection.Apiretro;
 import com.example.acompstore.pModel.ModelKategori;
@@ -28,10 +29,9 @@ import retrofit2.Response;
 public class DetailBarangActivity extends AppCompatActivity implements AdapterItemClick{
 
     private ActivityDetailBarangBinding bind;
-    String idBarang, nama, harga, deskripsi, terjual, gambar;
+    String idBarang, nama, harga, deskripsi, terjual, gambar, stok, diskon;
     private List<ModelKategori> list;
     AdapterDetailKategori adapter;
-    private int row_index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,18 +43,16 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
         harga = extras.getString("harga", harga);
         terjual = extras.getString("terjual", terjual);
         deskripsi = extras.getString("deskripsi", deskripsi);
+        stok = extras.getString("stok", stok);
         gambar = extras.getString("gambar", gambar);
         bind.debarNama.setText(nama);
-        bind.debarHarga.setText(harga);
+        new CurrencyModel(harga, bind.debarHarga);
+        new CurrencyModel(harga, bind.debarTotalharga);
+        bind.debarStok.setText(stok);
         bind.debarDescription.setText(deskripsi);
         ImageConvertModel icm = new ImageConvertModel(DetailBarangActivity.this, gambar, bind.debarImage);
         icm.ubahGambar();
         tampilKategori();
-
-//        adapter.setSelectedPosition(0);
-//        Toast.makeText(DetailBarangActivity.this, list.get(adapter.getSelectedPosition()).getHargaKategori(), Toast.LENGTH_SHORT).show();
-
-//        row_index = adapter.getSelectedPosition();
         bind.debarBtback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,10 +67,10 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
                 if (strjumlah-1 != 0){
                     int hasil = strjumlah - 1;
                     bind.debarJumlahbarang.setText(String.valueOf(hasil));
-//                    int harga1 = Integer.parseInt(bind.debarHarga.getText().toString());
-//                    int jumlah1 = Integer.parseInt(bind.debarJumlahbarang.getText().toString());
-//                    int total1 = harga1 * jumlah1;
-//                    bind.debarTotalharga.setText(String.valueOf(total1));
+                    int harga1 = Integer.parseInt(harga);
+                    int jumlah1 = Integer.parseInt(bind.debarJumlahbarang.getText().toString());
+                    int total1 = harga1 * jumlah1;
+                    new CurrencyModel(String.valueOf(total1), bind.debarTotalharga);
                 }
             }
         });
@@ -81,11 +79,11 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
             public void onClick(View view) {
                 int strjumlah = Integer.parseInt(bind.debarJumlahbarang.getText().toString());
                 int hasil = strjumlah + 1;
-//                bind.debarJumlahbarang.setText(String.valueOf(hasil));
-//                int harga1 = Integer.parseInt(bind.debarHarga.getText().toString());
-//                int jumlah1 = Integer.parseInt(bind.debarJumlahbarang.getText().toString());
-//                int total1 = harga1 * jumlah1;
-//                bind.debarTotalharga.setText(String.valueOf(total1));
+                bind.debarJumlahbarang.setText(String.valueOf(hasil));
+                int harga1 = Integer.parseInt(harga);
+                int jumlah1 = Integer.parseInt(bind.debarJumlahbarang.getText().toString());
+                int total1 = harga1 * jumlah1;
+                new CurrencyModel(String.valueOf(total1), bind.debarTotalharga);
             }
         });
     }
@@ -107,6 +105,7 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
                 adapter = new AdapterDetailKategori(DetailBarangActivity.this, list, DetailBarangActivity.this);
                 bind.debarRckategori.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
+
             }
 
             @Override
@@ -120,8 +119,14 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
     public void onItemClick(int position) {
         adapter.setSelectedPosition(position);
         adapter.getSelectedPosition();
-        bind.debarHarga.setText(list.get(position).getHargaKategori());
+        harga = list.get(position).getHargaKategori();
+        new CurrencyModel(harga, bind.debarHarga);
+        stok = list.get(position).getStok();
         bind.debarStok.setText(list.get(position).getStok());
-
+        int hasil = Integer.parseInt(harga) * Integer.parseInt(bind.debarJumlahbarang.getText().toString());
+        new CurrencyModel(String.valueOf(hasil), bind.debarTotalharga);
+        gambar = list.get(position).getGambar();
+        ImageConvertModel icm = new ImageConvertModel(DetailBarangActivity.this, gambar, bind.debarImage);
+        icm.ubahGambar();
     }
 }
