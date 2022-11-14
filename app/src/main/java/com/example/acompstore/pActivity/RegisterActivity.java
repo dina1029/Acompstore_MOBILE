@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityRegisterBinding;
+import com.example.acompstore.pAdditional.AlertErrorDialog;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -70,20 +71,8 @@ public class RegisterActivity extends AppCompatActivity {
             checknull = true;
         }
         if (checknull==false){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            View view = getLayoutInflater().inflate(R.layout.error_null_dialog, null);
-            builder.setView(view);
-            alert = builder.create();
-            alert.show();
-            nullbterror = view.findViewById(R.id.nulldialog_btclose);
-            nullEmail = view.findViewById(R.id.nulldialog_header);
-            nullbterror.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    alert.dismiss();
-                }
-            });
-            nullEmail.setText(head);
+            String body = "Mohon lengkapi data anda dengan benar";
+            new AlertErrorDialog(RegisterActivity.this, head, body);
             checknull = false;
         }
     }

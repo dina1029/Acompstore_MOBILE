@@ -15,9 +15,13 @@ import android.widget.Toast;
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityLoginBinding;
 import com.example.acompstore.pConnection.Apiretro;
+import com.example.acompstore.pModel.ModelPembeliAlamat;
 import com.example.acompstore.pResponse.ResponsePostPembeli;
 import com.example.acompstore.pService.ServiceRegisterLogin;
 import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,12 +30,14 @@ import retrofit2.Response;
 public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;
-    TextInputEditText password, email;
-    AlertDialog alert;
-    boolean checknull = false;
-    AppCompatButton nullbterror;
-    TextView nullEmail, forgot;
-    SharedPreferences shared;
+    private TextInputEditText password, email;
+    private AlertDialog alert;
+    private boolean checknull = false;
+    private AppCompatButton nullbterror;
+    private TextView nullEmail, forgot;
+    private SharedPreferences shared;
+    private List<ModelPembeliAlamat> list;
+
 
 
     @Override
@@ -82,10 +88,12 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<ResponsePostPembeli> call, Response<ResponsePostPembeli> response) {
                     byte kode = response.body().getKode();
+                    list = response.body().getData();
                     if (kode == 1) {
                         shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
                         SharedPreferences.Editor editor = shared.edit();
                         editor.putBoolean("status", true);
+                        editor.putString("idPembeli", list.get(0).getIdPembeli());
                         editor.commit();
                         startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                         finish();

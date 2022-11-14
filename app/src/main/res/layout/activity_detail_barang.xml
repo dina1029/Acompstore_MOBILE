@@ -21,15 +21,18 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/debar_image"
-                        android:src="@drawable/flashdisk"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
                         android:background="#F2F2F2"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/flashdisk"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"/>
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <ImageButton
                         android:id="@+id/debar_btback"
                         app:layout_constraintTop_toTopOf="parent"

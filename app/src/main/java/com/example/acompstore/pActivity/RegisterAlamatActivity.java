@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityRegisterAlamatBinding;
+import com.example.acompstore.pAdditional.AlertErrorDialog;
 import com.example.acompstore.pConnection.Apiretro;
 import com.example.acompstore.pResponse.ResponsePostPembeli;
 import com.example.acompstore.pService.ServiceRegisterLogin;
@@ -26,9 +27,6 @@ public class RegisterAlamatActivity extends AppCompatActivity {
 
     private ActivityRegisterAlamatBinding bind;
     String nama, pass, phone, email;
-    AppCompatButton nullbterror;
-    TextView nullEmail, nullDesk;
-    AlertDialog alert;
     SharedPreferences shared;
     boolean checknull = false;
 
@@ -97,22 +95,7 @@ public class RegisterAlamatActivity extends AppCompatActivity {
             });
             checknull = true;
         }if (checknull==false){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            View view = getLayoutInflater().inflate(R.layout.error_null_dialog, null);
-            builder.setView(view);
-            alert = builder.create();
-            alert.show();
-            nullbterror = view.findViewById(R.id.nulldialog_btclose);
-            nullDesk = view.findViewById(R.id.nulldialog_body);
-            nullEmail = view.findViewById(R.id.nulldialog_header);
-            nullbterror.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    alert.dismiss();
-                }
-            });
-            nullEmail.setText(head);
-            nullDesk.setText(body);
+            new AlertErrorDialog(RegisterAlamatActivity.this, head, body);
             checknull = false;
         }
     }
