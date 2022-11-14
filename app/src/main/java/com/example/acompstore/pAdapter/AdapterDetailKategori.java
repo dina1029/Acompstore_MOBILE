@@ -29,6 +29,7 @@ public class AdapterDetailKategori extends RecyclerView.Adapter<AdapterDetailKat
     private List<ModelKategori> list;
     private final AdapterItemClick itemClick;
     private int selectedPosition = 0;
+    private int a;
 
 
     public int getSelectedPosition() {
