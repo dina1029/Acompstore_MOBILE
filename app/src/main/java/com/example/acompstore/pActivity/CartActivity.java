@@ -33,6 +33,7 @@ public class CartActivity extends AppCompatActivity implements AdapterKeranjang.
     private List<ModelKeranjang> list;
     private AdapterKeranjang adapterKeranjang;
     private int hasil = 0;
+    private int kk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
