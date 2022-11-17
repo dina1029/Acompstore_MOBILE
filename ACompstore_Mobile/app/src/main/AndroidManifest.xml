@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.acompstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AcompStore"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SettingKeamananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SettingAlamatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SettingAkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.LupaPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.HomeSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cobaactivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.RegisterAlamatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SettingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

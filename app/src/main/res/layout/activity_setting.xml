@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu"
+    tools:context=".pActivity.SettingActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relast1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/grdn1"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btn_ker"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="340dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_setcart" />
+
+        <ImageButton
+            android:id="@+id/btn_cht"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="280dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_chat" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:id="@+id/ic_prof"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/ic_avatar" />
+
+            <TextView
+                android:id="@+id/tam_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingTop="8dp"
+                android:text="Nama"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/ic_prof"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tam_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="example@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/ic_prof"
+                app:layout_constraintTop_toBottomOf="@id/tam_nama" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_akun"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/relast1"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_akun"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"/>
+        <ImageView
+            android:id="@+id/ic_akun"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_akun"/>
+        <TextView
+            android:id="@+id/txt_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:text="Akun"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_kmn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_akun"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_kmn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"/>
+        <ImageView
+            android:id="@+id/ic_kmn"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_kmn"/>
+        <TextView
+            android:id="@+id/txt_kmn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:text="Keamanan"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_as"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_kmn"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_as"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"/>
+        <ImageView
+            android:id="@+id/ic_as"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_as"/>
+        <TextView
+            android:id="@+id/txt_as"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:text="Alamat Saya"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_logout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_as"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"/>
+        <ImageView
+            android:id="@+id/ic_logout"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_logout"/>
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:text="Log out"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_btnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/home_menu"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

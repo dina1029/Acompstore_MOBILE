@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/radius25.xml" value="0.1015" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/strokeradius15.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/bg_inputlogin.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/bg_tophome.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_arrowback.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius10.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius3.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/strokeradius15.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/font/fonts.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cobaactivity.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_home.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_home_search.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register_alamat.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_setting_fragment.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_homebarang.xml" value="0.3543307086614173" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/error_null_dialog.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_history.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_home.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_notification.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register_alamat.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_setting.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/menu/home_menu.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/button.xml" value="0.1855" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/cardborder.xml" value="0.1855" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/cardborder2.xml" value="0.1855" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/grdn1.xml" value="0.1855" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/ic_notification.xml" value="0.138" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/ic_notification2.xml" value="0.138" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_home_search.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_logout.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_lupa_password.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_notification.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_register_alamat.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_akun.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_alamat.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_keamanan.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/bottom_nav_menu.xml" value="0.2734375" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/cv_homebarang.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/error_null_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/menu/home_menu.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
