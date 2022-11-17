@@ -15,4 +15,5 @@ public interface ServiceHome {
 
     @GET("jenisbarang.php")
     Call<ResponseGetJenis> getHomeJenisBarang();
+
 }

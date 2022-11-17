@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.TextView;
 
@@ -45,6 +46,9 @@ public class RegisterActivity extends AppCompatActivity {
         if (bind.registerEmail.getText().toString().isEmpty()){
             head = "Masukkan Email";
             checknull = false;
+        }else if(isValidEmail(bind.registerEmail.getText().toString().trim())==false){
+            head = "Email Tidak Valid";
+            checknull = false;
         }else if(bind.registerName.getText().toString().isEmpty()){
             head = "Masukan Nama";
             checknull = false;
@@ -74,6 +78,13 @@ public class RegisterActivity extends AppCompatActivity {
             String body = "Mohon lengkapi data anda dengan benar";
             new AlertErrorDialog(RegisterActivity.this, head, body);
             checknull = false;
+        }
+    }
+    private boolean isValidEmail(String email) {
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

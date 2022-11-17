@@ -1,6 +1,6 @@
 package com.example.acompstore.pModel;
 
-public class ModelKeranjang {
+public class ModelCheckout {
     private String idKeranjang;
     private String Keranjang_idPembeli;
     private String KeranjangJumlah;
@@ -11,7 +11,7 @@ public class ModelKeranjang {
     private String Diskon;
     private String idBarang;
     private String NamaBarang;
-    private boolean isSelectedCheck;
+    private String subTotal;
 
     public String getIdKeranjang() {
         return idKeranjang;
@@ -93,18 +93,15 @@ public class ModelKeranjang {
         NamaBarang = namaBarang;
     }
 
-    public boolean isSelectedCheck() {
-        return isSelectedCheck;
+    public String getSubTotal() {
+        return subTotal;
     }
 
-    public void setSelectedCheck(boolean selectedCheck) {
-        isSelectedCheck = selectedCheck;
+    public void setSubTotal(String subTotal) {
+        this.subTotal = subTotal;
     }
 
-    public ModelKeranjang() {
-    }
-
-    public ModelKeranjang(String idKeranjang, String keranjang_idPembeli, String keranjangJumlah, String namaKategori, String hargaKategori, String stok, String gambar, String diskon, String idBarang, String namaBarang, boolean isSelectedCheck) {
+    public ModelCheckout(String idKeranjang, String keranjang_idPembeli, String keranjangJumlah, String namaKategori, String hargaKategori, String stok, String gambar, String diskon, String idBarang, String namaBarang, String subTotal) {
         this.idKeranjang = idKeranjang;
         Keranjang_idPembeli = keranjang_idPembeli;
         KeranjangJumlah = keranjangJumlah;
@@ -115,6 +112,9 @@ public class ModelKeranjang {
         Diskon = diskon;
         this.idBarang = idBarang;
         NamaBarang = namaBarang;
-        this.isSelectedCheck = isSelectedCheck;
+        this.subTotal = subTotal;
+    }
+
+    public ModelCheckout() {
     }
 }

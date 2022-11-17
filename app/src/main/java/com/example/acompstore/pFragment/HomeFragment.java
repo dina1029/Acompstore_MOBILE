@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.FragmentHomeBinding;
+import com.example.acompstore.pActivity.CartActivity;
 import com.example.acompstore.pActivity.DetailBarangActivity;
 import com.example.acompstore.pActivity.HomeSearchActivity;
 import com.example.acompstore.pAdapter.AdapterHomeBarang;
@@ -101,6 +102,13 @@ public class HomeFragment extends Fragment implements AdapterItemClick {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), HomeSearchActivity.class));
+            }
+        });
+
+        bind.homeBtcart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), CartActivity.class));
             }
         });
 

@@ -12,6 +12,7 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_arrowback.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_cart.xml" value="0.122" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_cartgray.xml" value="0.122" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_reporttransaction.xml" value="0.1695" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius10.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius2.xml" value="0.16" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius3.xml" value="0.1" />
@@ -19,6 +20,7 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/strokeradius15.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/font/fonts.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_checkout_pesanan.xml" value="0.33" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cobaactivity.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_detail_barang.xml" value="0.27701863354037265" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
@@ -29,7 +31,8 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register_alamat.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_setting_fragment.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_cart.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_cart.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_checkout.xml" value="0.33" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_detailbarang.xml" value="0.5" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_homebarang.xml" value="0.3543307086614173" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_homejenis.xml" value="0.9" />

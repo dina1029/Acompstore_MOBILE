@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ import com.example.acompstore.pConnection.Apiretro;
 import com.example.acompstore.pModel.ModelKategori;
 import com.example.acompstore.pResponse.ResponseGetKategori;
 import com.example.acompstore.pResponse.ResponsePos;
+import com.example.acompstore.pResponse.ResponsePosMessage;
 import com.example.acompstore.pService.ServiceDetailBarang;
 import com.example.acompstore.pService.ServiceKeranjang;
 
@@ -104,27 +106,33 @@ public class DetailBarangActivity extends AppCompatActivity implements AdapterIt
                     shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
                     idPembeli = shared.getString("idPembeli", idPembeli);
                     ServiceKeranjang service = Apiretro.getService().create(ServiceKeranjang.class);
-                    Call<ResponsePos> simpan = service.addToCart(idKategori, idPembeli,
+                    Call<ResponsePosMessage> simpan = service.addToCart(idKategori, idPembeli,
                             bind.debarJumlahbarang.getText().toString());
-                    simpan.enqueue(new Callback<ResponsePos>() {
+                    simpan.enqueue(new Callback<ResponsePosMessage>() {
                         @Override
-                        public void onResponse(Call<ResponsePos> call, Response<ResponsePos> response) {
+                        public void onResponse(Call<ResponsePosMessage> call, Response<ResponsePosMessage> response) {
                             if (response.body().getKode()==1){
                                 Toast.makeText(DetailBarangActivity.this, "Barang telah dimasukkan keranjang"
                                 , Toast.LENGTH_SHORT).show();
                             }else{
-                                Toast.makeText(DetailBarangActivity.this, "Gagal memasukkan barang ke keranjang"
-                                        , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DetailBarangActivity.this, response.body().getPesan()
+                                        , Toast.LENGTH_LONG).show();
                             }
                         }
 
                         @Override
-                        public void onFailure(Call<ResponsePos> call, Throwable t) {
+                        public void onFailure(Call<ResponsePosMessage> call, Throwable t) {
                             Toast.makeText(DetailBarangActivity.this, "Server Error : " + t.getMessage()
                                     , Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
+            }
+        });
+        bind.debarBtcart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DetailBarangActivity.this, CartActivity.class));
             }
         });
     }

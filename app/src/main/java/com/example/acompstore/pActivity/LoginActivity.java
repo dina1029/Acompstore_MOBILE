@@ -8,12 +8,14 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityLoginBinding;
+import com.example.acompstore.pAdditional.AlertErrorDialog;
 import com.example.acompstore.pConnection.Apiretro;
 import com.example.acompstore.pModel.ModelPembeliAlamat;
 import com.example.acompstore.pResponse.ResponsePostPembeli;
@@ -37,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextView nullEmail, forgot;
     private SharedPreferences shared;
     private List<ModelPembeliAlamat> list;
-
 
 
     @Override
@@ -68,18 +69,23 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
     private void loginData() {
-        String head="";
-        if(binding.loginEmail.getText().toString().isEmpty() && binding.loginPassword.getText().toString().isEmpty()){
+        String head = "";
+        if (binding.loginEmail.getText().toString().isEmpty() && binding.loginPassword.getText().toString().isEmpty()) {
             head = "Masukkan Email dan Password";
             checknull = false;
-        }else if (binding.loginEmail.getText().toString().isEmpty()){
+        }
+        if (binding.loginEmail.getText().toString().isEmpty()) {
             head = "Masukkan Email";
             checknull = false;
-        }else if(binding.loginPassword.getText().toString().isEmpty()){
+        } else if (isValidEmail(binding.loginEmail.getText().toString().trim()) == false) {
+            head = "Email Tidak Valid";
+            checknull = false;
+        } else if (binding.loginPassword.getText().toString().isEmpty()) {
             head = "Masukkan Password";
             checknull = false;
-        } else{
+        } else {
             email = binding.loginEmail;
             password = binding.loginPassword;
             ServiceRegisterLogin service = Apiretro.getService().create(ServiceRegisterLogin.class);
@@ -98,7 +104,9 @@ public class LoginActivity extends AppCompatActivity {
                         startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                         finish();
                     } else if (kode == 0) {
-                        Toast.makeText(LoginActivity.this, "Gagal Login", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(LoginActivity.this, "Gagal Login", Toast.LENGTH_SHORT).show();
+                        new AlertErrorDialog(LoginActivity.this, "Gagal Login",
+                                "Mohon Coba Ulang Masukkan Akun");
                     }
                 }
 
@@ -109,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
             });
             checknull = true;
         }
-        if (checknull==false){
+        if (checknull == false) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             View view = getLayoutInflater().inflate(R.layout.error_null_dialog, null);
             builder.setView(view);
@@ -125,6 +133,14 @@ public class LoginActivity extends AppCompatActivity {
             });
             nullEmail.setText(head);
             checknull = false;
+        }
+    }
+
+    private boolean isValidEmail(String email) {
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

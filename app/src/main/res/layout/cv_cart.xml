@@ -19,6 +19,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:minWidth="0dp"
             android:height="0dp"
+            android:padding="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
@@ -28,8 +29,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginLeft="8dp"
             android:src="@drawable/flashdisk"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
+            android:layout_width="55dp"
+            android:layout_height="70dp"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@id/cvcart_gambar"
@@ -52,11 +53,31 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/cvcart_discount"
+                android:id="@+id/cvcart_kategori"
+                android:text="1 Meter"
+                android:textSize="7sp"
+                android:textColor="@color/veryoldgray"
+                android:textAlignment="center"
+                android:background="@drawable/radius3"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/yellow"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cvcart_nama"
+                app:layout_constraintBottom_toTopOf="@id/cvcart_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/cvcart_discount"
+                app:layout_constraintTop_toBottomOf="@id/cvcart_kategori"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="8sp"
+                android:padding="0dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/oldpurple"
                 android:text="Discount 50%"
@@ -79,7 +100,7 @@
                 app:layout_constraintTop_toTopOf="@id/cvcart_harga"
                 app:layout_constraintBottom_toBottomOf="@id/cvcart_harga"
                 app:layout_constraintLeft_toRightOf="@id/cvcart_harga"
-                android:layout_marginLeft="2dp"
+                android:layout_marginLeft="4dp"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="8sp"
                 android:layout_width="wrap_content"
@@ -139,6 +160,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageButton
+            android:id="@+id/cvcart_btdelete"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginBottom="5dp"
