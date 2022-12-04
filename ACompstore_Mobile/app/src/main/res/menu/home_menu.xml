@@ -9,7 +9,7 @@
     <item android:title="Nofication"
         android:id="@+id/menuhome_notification"
         android:icon="@drawable/ic_notification"/>
-    <item android:title="Setting"
-        android:id="@+id/menuhome_setting"
-        android:icon="@drawable/ic_setting"/>
+    <item android:title="Akun"
+        android:id="@+id/menuhome_akun"
+        android:icon="@drawable/ic_akun"/>
 </menu>

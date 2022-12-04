@@ -15,9 +15,12 @@ public class CurrencyModel {
     public CurrencyModel(String rupiah, TextView textViewset) {
         this.rupiah = rupiah;
         this.textViewset = textViewset;
-
-        Locale localeID = new Locale("in", "ID");
-        NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
-        textViewset.setText(formatRupiah.format(Double.parseDouble(rupiah)));
+        String S_angka_normal = rupiah.replaceAll("\\,", "");
+        double D_angka_Normal = Double.parseDouble(S_angka_normal);
+        DecimalFormat DF = new DecimalFormat("#,###,###");
+        textViewset.setText("Rp " + DF.format(D_angka_Normal));
+//        Locale localeID = new Locale("in", "ID");
+//        NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
+//        textViewset.setText(formatRupiah.format(Double.parseDouble(rupiah)));
     }
 }

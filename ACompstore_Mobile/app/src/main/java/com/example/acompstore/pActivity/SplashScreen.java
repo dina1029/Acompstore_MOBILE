@@ -21,15 +21,15 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 shared = getSharedPreferences("myapp-data", MODE_PRIVATE);
-//                if(shared.getBoolean("status", false)==true){
-//                    Intent home = new Intent(SplashScreen.this, RegisterActivity.class);
-//                    startActivity(home);
-//                    finish();
-//                }else{
+                if(shared.getBoolean("status", false)==true){
+                    Intent home = new Intent(SplashScreen.this, HomeActivity.class);
+                    startActivity(home);
+                    finish();
+                }else{
                     Intent home = new Intent(SplashScreen.this, LoginActivity.class);
                     startActivity(home);
                     finish();
-//                }
+                }
             }
         }, 2000);
     }

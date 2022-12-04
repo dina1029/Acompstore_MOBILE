@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.menuhome_notification:
                         selected = new NotificationFragment();
                         break;
-                    case R.id.menuhome_setting:
+                    case R.id.menuhome_akun:
                         selected = new SettingFragment();
                         break;
                 }

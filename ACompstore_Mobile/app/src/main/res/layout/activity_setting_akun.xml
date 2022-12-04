@@ -46,11 +46,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/cltopst"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Email"
-            android:textSize="17sp"
+            android:textSize="16sp"
             tools:ignore="MissingConstraints" />
 
         <RelativeLayout
@@ -63,32 +63,20 @@
             android:layout_marginRight="14dp"
             android:background="@drawable/bg_inputlogin">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:id="@+id/tam_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@drawable/ic_passlogin"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                app:boxBackgroundColor="@color/transparent"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                app:hintEnabled="false">
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:hint="example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="0dp"
+                android:textSize="15sp"
+                app:boxBackgroundColor="@color/transparent" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/int_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:background="@color/transparent"
-                    android:fontFamily="@font/poppins_medium"
-                    android:textColor="@color/black"
-                    android:hint="examle@gmail.com"
-                    android:inputType="textEmailAddress"
-                    android:padding="0dp"
-                    android:textSize="16sp"
-                    app:boxBackgroundColor="@color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <TextView
@@ -100,7 +88,7 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Nama"
-            android:textSize="17sp"
+            android:textSize="16sp"
             tools:ignore="MissingConstraints" />
 
         <RelativeLayout
@@ -114,32 +102,18 @@
             android:background="@drawable/bg_inputlogin"
             tools:ignore="MissingConstraints">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:id="@+id/tam_nama"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@drawable/ic_passlogin"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                app:boxBackgroundColor="@color/transparent"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                app:hintEnabled="false">
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:hint="Username"
+                android:padding="0dp"
+                app:boxBackgroundColor="@color/transparent" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/int_nama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:background="@color/transparent"
-                    android:fontFamily="@font/poppins_medium"
-                    android:textColor="@color/black"
-                    android:hint="nama"
-                    android:inputType="textEmailAddress"
-                    android:padding="0dp"
-                    android:textSize="16sp"
-                    app:boxBackgroundColor="@color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
         <TextView
@@ -151,7 +125,7 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_bold"
             android:text="No Telp"
-            android:textSize="17sp"
+            android:textSize="16sp"
             tools:ignore="MissingConstraints" />
 
         <RelativeLayout
@@ -165,57 +139,35 @@
             android:background="@drawable/bg_inputlogin"
             tools:ignore="MissingConstraints">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:id="@+id/tam_notelp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@drawable/ic_passlogin"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                app:boxBackgroundColor="@color/transparent"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                app:hintEnabled="false">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/int_notelp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:background="@color/transparent"
-                    android:fontFamily="@font/poppins_medium"
-                    android:textColor="@color/black"
-                    android:hint="no telp"
-                    android:inputType="textEmailAddress"
-                    android:padding="0dp"
-                    android:textSize="16sp"
-                    app:boxBackgroundColor="@color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_vertical"
+                android:hint="No Telp"
+                android:padding="0dp"
+                android:textSize="15sp"
+                app:boxBackgroundColor="@color/transparent" />
         </RelativeLayout>
 
         <Button
-            android:id="@+id/btn_ubah"
-            android:layout_width="350dp"
+            android:id="@+id/btn_ubahakun"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/radius10"
             android:backgroundTint="@color/oldpurple"
             android:fontFamily="@font/poppins_medium"
             android:textStyle="bold"
             android:text="Ubah Data Akun"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="17sp"
             app:layout_constraintTop_toBottomOf="@id/rela3"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/home_btnav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/home_menu"
             tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

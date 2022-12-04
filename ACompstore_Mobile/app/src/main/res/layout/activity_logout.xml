@@ -20,6 +20,7 @@
             android:src="@drawable/il_logout"/>
 
         <TextView
+            android:id="@+id/head1"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -31,6 +32,7 @@
             android:text="Oh Tidak, Kamu Keluar..."/>
 
         <TextView
+            android:id="@+id/head2"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
