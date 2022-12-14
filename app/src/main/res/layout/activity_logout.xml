@@ -2,71 +2,106 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".pActivity.LogoutActivity">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        app:cardBackgroundColor="@color/white"
-        tools:ignore="MissingConstraints">
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/il_logout"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/il_logout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
 
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="210dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:text="Oh Tidak, Kamu Keluar..."/>
+            <ImageView
+                android:id="@+id/il_logout"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bg_logout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="232dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:text="Yakin Ingin Log Out ?"/>
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Oh tidak, kamu akan keluar..."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/il_logout" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_yes"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:background="@drawable/cardborder"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="280dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="Ya, Saya keluar"
-            style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Apakah kamu yakin ?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/head1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_no"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:background="@drawable/cardborder2"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="330dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="Tidak"
-            style="?android:attr/borderlessButtonStyle"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_yes"
+                style="?android:attr/borderlessButtonStyle"
+                android:maxLines="1"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/radius25"
+                android:backgroundTint="@color/yellow"
+                android:minHeight="0dp"
+                android:padding="7dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Ya, saya ingin keluar"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/head2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_no"
+                android:layout_width="220dp"
+                android:minHeight="0dp"
+                android:padding="7dp"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/radius25"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Tidak, tetap disini"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_yes"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

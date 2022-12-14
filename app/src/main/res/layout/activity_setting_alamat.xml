@@ -1,220 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".pActivity.SettingAlamatActivity"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cltopst"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".pActivity.SettingAkunActivity">
 
-        <ImageButton
-            android:id="@+id/regal_btbackset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/ic_arrowback"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txtAlamat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Alamat Saya"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cltopst"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/regal_btbackset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_arrowback"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Alamat"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_constraintTop_toBottomOf="@id/cltopst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="100dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/tilustimage"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/alamat_ilust"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHeight_percent="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/txtEmailstal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Email"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/tilustimage"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/rela1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/txtEmailstal">
+
+                    <TextView
+                        android:id="@+id/setal_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:hint="example@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/set_prov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Provinsi"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/rela1"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/rela11"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/set_prov">
+
+                    <TextView
+                        android:id="@+id/setal_prov"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:hint="Provinsi"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/set_kab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Kabupaten"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/rela11"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/rela2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/set_kab"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/setal_kab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:hint="Kabupaten"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/set_kec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Kecamantan"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/rela2"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/rela3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/set_kec"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/setal_kec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:hint="Kecamatan"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/set_kec21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Kelurahan"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/rela3"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/rela12"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/set_kec21"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/setal_kelura"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:hint="Kelurahan"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/set_al"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Alamat"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/rela12" />
+
+                <RelativeLayout
+                    android:id="@+id/rela4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_inputlogin"
+                    app:layout_constraintTop_toBottomOf="@id/set_al"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/setal_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Alamat"
+                        android:padding="0dp"
+                        android:textSize="15sp"
+                        app:boxBackgroundColor="@color/transparent" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_ubahalamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius10"
+                    android:backgroundTint="@color/oldpurple"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Ubah Data Alamat"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:minHeight="0dp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rela4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/txtEmailst"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/cltopst"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="15dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Email"
-        android:textSize="17sp"
-        tools:ignore="MissingConstraints" />
-
-    <RelativeLayout
-        android:id="@+id/rela1"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/txtEmailst"
-        android:layout_height="50dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginRight="14dp"
-        android:background="@drawable/bg_inputlogin">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@drawable/ic_passlogin"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            app:boxBackgroundColor="@color/transparent"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/int_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:background="@color/transparent"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:hint="examle@gmail.com"
-                android:inputType="textEmailAddress"
-                android:padding="0dp"
-                android:textSize="16sp"
-                app:boxBackgroundColor="@color/transparent" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/set_nama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/rela1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Kabupaten"
-        android:textSize="17sp"
-        tools:ignore="MissingConstraints" />
-
-    <RelativeLayout
-        android:id="@+id/rela2"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/set_nama"
-        android:layout_height="50dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginRight="14dp"
-        android:background="@drawable/bg_inputlogin"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@drawable/ic_passlogin"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            app:boxBackgroundColor="@color/transparent"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/int_nama"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:background="@color/transparent"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:hint="Kabupaten"
-                android:inputType="textEmailAddress"
-                android:padding="0dp"
-                android:textSize="16sp"
-                app:boxBackgroundColor="@color/transparent" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/set_notelp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/rela2"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Kecamatan"
-        android:textSize="17sp"
-        tools:ignore="MissingConstraints" />
-
-    <RelativeLayout
-        android:id="@+id/rela3"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/set_notelp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginRight="14dp"
-        android:background="@drawable/bg_inputlogin"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@drawable/ic_passlogin"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            app:boxBackgroundColor="@color/transparent"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/int_notelp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:background="@color/transparent"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:hint="Kecamatan"
-                android:inputType="textEmailAddress"
-                android:padding="0dp"
-                android:textSize="16sp"
-                app:boxBackgroundColor="@color/transparent" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/btn_ubah"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/radius10"
-        android:backgroundTint="@color/oldpurple"
-        android:fontFamily="@font/poppins_medium"
-        android:textStyle="bold"
-        android:text="Ganti Alamat"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/rela3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/home_btnav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/home_menu"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

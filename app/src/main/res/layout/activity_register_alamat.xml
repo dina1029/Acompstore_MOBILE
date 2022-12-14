@@ -39,71 +39,99 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf=   "parent" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/gambar"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/bg_registeraddress"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cltop" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clmid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toBottomOf="parent">
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cltop">
 
             <TextView
-                android:id="@+id/tkota"
+                android:id="@+id/tprovinsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Kota"
+                android:text="Provinsi"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/regal_kota"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+            <LinearLayout
+                android:id="@+id/cvprov"
                 android:background="@drawable/bg_inputlogin"
-                android:fontFamily="@font/poppins_medium"
-                android:hint="Nama kota/kabupaten"
-                android:padding="10dp"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@+id/tkota" />
+                app:layout_constraintTop_toBottomOf="@id/tprovinsi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/regal_provinsi"
+                    android:textSize="14sp"
+                    android:padding="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tkota"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Kabupaten"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvprov" />
+
+            <LinearLayout
+                android:id="@+id/cvkab"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_inputlogin"
+                app:layout_constraintTop_toBottomOf="@+id/tkota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/regal_kabupaten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tkecamatan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Kecamatan"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/regal_kota" />
+                app:layout_constraintTop_toBottomOf="@id/cvkab" />
 
             <EditText
                 android:id="@+id/regal_kecamatan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/bg_inputlogin"
                 android:fontFamily="@font/poppins_medium"
                 android:hint="Nama kecamatan"
-                android:padding="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tkecamatan" />
 
@@ -111,34 +139,73 @@
                 android:id="@+id/talamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Alamat"
+                android:text="Kelurahan"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/regal_kecamatan" />
 
             <EditText
-                android:id="@+id/regal_alamat"
+                android:id="@+id/regal_kelurahan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/bg_inputlogin"
                 android:fontFamily="@font/poppins_medium"
                 android:hint="Nomor rumah, nama jalan, rt/rw"
-                android:padding="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/talamat" />
 
+            <TextView
+                android:id="@+id/tdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Detail Alamat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/regal_kelurahan" />
+
+            <EditText
+                android:id="@+id/regal_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_inputlogin"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Nomor rumah, nama jalan, rt/rw"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tdetail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@id/clmid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
             <CheckBox
                 android:id="@+id/regal_check"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
+                android:layout_marginBottom="22dp"
                 android:background="@drawable/radius3"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/regal_alamat" />
+                app:layout_constraintBottom_toTopOf="@id/regal_btregister"/>
 
             <TextView
                 android:id="@+id/tsetuju"
@@ -147,22 +214,24 @@
                 android:layout_marginLeft="3dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Saya telah menyetujui semua peraturan pada aplikasi ini!"
+                android:layout_marginBottom="22dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/regal_check"
-                app:layout_constraintTop_toTopOf="@id/regal_check" />
+                app:layout_constraintBottom_toTopOf="@id/regal_btregister"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/regal_btregister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
                 android:background="@drawable/radius10"
                 android:backgroundTint="@color/oldpurple"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Register"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/tsetuju" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

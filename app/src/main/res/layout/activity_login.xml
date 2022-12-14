@@ -36,14 +36,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="6.3"
                 android:gravity="bottom"
+                android:layout_weight="6.3"
                 android:orientation="vertical">
 
                 <TextView
+                    android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Email"
                     android:textSize="17sp" />
@@ -85,23 +85,21 @@
                             android:layout_margin="0dp"
                             android:background="@color/transparent"
                             android:fontFamily="@font/poppins_medium"
-                            android:hint="examle@gmail.com"
+                            android:hint="example@gmail.com"
                             android:inputType="textEmailAddress"
                             android:padding="0dp"
                             android:textSize="16sp"
                             app:boxBackgroundColor="@color/transparent" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Password"
                     android:textSize="17sp" />
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -121,50 +119,48 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:hint="***"
+                        app:hintEnabled="false"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@+id/iv_pass"
                         android:drawableLeft="@drawable/ic_passlogin"
-                        android:hint="***"
                         app:boxBackgroundColor="@color/transparent"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp"
-                        app:hintEnabled="false"
                         app:passwordToggleEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/login_password"
+                            android:hint="****"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:maxLines="1"
                             android:layout_margin="0dp"
                             android:background="@color/transparent"
                             android:fontFamily="@font/poppins_medium"
-                            android:hint="****"
                             android:inputType="textPassword"
-                            android:maxLines="1"
                             android:padding="0dp"
                             app:boxBackgroundColor="@color/transparent" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>
-
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/login_btlogin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/radius10"
-                    android:backgroundTint="@color/oldpurple"
-                    android:fontFamily="@font/poppins_bold"
                     android:text="Login"
-                    android:textAllCaps="false"
+                    android:backgroundTint="@color/oldpurple"
+                    android:textSize="20sp"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <RelativeLayout
+                    android:fontFamily="@font/poppins_bold"
+                    android:background="@drawable/radius10"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -177,6 +173,7 @@
                         android:paddingBottom="3dp">
 
                         <TextView
+                            android:id="@+id/login_forgot"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -184,37 +181,35 @@
                             android:text="Forgot Password" />
                     </RelativeLayout>
                 </RelativeLayout>
-
                 <RelativeLayout
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
+                    android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:orientation="horizontal">
-
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:textColor="@color/youngpurple"
+                            android:textSize="16sp"
                             android:fontFamily="@font/poppins_bold"
                             android:text="Belum punya akun? "
-                            android:textColor="@color/youngpurple"
-                            android:textSize="16sp" />
-
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/login_tvdaftar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Daftar"
+                            android:textSize="16sp"
                             android:textColor="@color/oldpurple"
-                            android:textSize="16sp" />
+                            android:text="Daftar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 </layout>

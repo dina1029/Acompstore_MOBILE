@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pActivity.RulesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cltoplp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/txtForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Aturan Pembelian"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ic_forgett"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_aturan"
+        android:layout_marginTop="50dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cltoplp"
+        tools:layout_editor_absoluteY="110dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_forgett"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:text="Perhatikan Aturan Pembelian !"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/oldgray"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="1. "
+        app:layout_constraintRight_toLeftOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/jdl"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Harap membaca deskripsi detail barang dengan teliti"
+        android:textColor="@color/oldgray"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/no1"
+        app:layout_constraintTop_toBottomOf="@id/jdl"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/no2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/oldgray"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="2. "
+        app:layout_constraintRight_toLeftOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/no1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mengikuti aturan transaksi yang telah disediakan"
+        android:textColor="@color/oldgray"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/no2"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/no3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/oldgray"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="3. "
+        app:layout_constraintRight_toLeftOf="@id/txt3"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Memahami semua transaksi yang sudah disediakan"
+        android:textColor="@color/oldgray"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/no3"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rules_kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius10"
+        android:backgroundTint="@color/oldpurple"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kembali"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

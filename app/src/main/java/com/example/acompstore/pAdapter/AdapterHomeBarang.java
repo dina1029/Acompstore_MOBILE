@@ -1,13 +1,16 @@
 package com.example.acompstore.pAdapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.acompstore.R;
@@ -39,12 +42,16 @@ public class AdapterHomeBarang extends RecyclerView.Adapter<AdapterHomeBarang.Ho
         return holder;
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         ModelHomeBarang mh = list.get(position);
-        holder.idBarang.setText(mh.getIdbarang());
+        holder.idBarang.setText(mh.getIdBarang());
         holder.idKategori.setText(mh.getIdKategori());
         holder.nama.setText(mh.getNamaBarang());
+        holder.deskripsi.setText(mh.getDeskripsiBarang());
+        holder.stok.setText(mh.getStok());
+        holder.diskon.setText(mh.getDiskon());
         ImageConvertModel icm = new ImageConvertModel(context, mh.getGambar(), holder.gambar);
         icm.ubahGambar();
         CurrencyModel cm = new CurrencyModel(mh.getHargaKategori(), holder.harga);
@@ -61,7 +68,7 @@ public class AdapterHomeBarang extends RecyclerView.Adapter<AdapterHomeBarang.Ho
     }
 
     public static class HolderData extends RecyclerView.ViewHolder {
-        TextView idBarang, idKategori, harga, nama, terjual;
+        TextView idBarang, idKategori, harga, nama, terjual, deskripsi, stok, diskon;
         ImageView gambar;
         public HolderData(@NonNull View itemView, AdapterItemClick adapterItemClick) {
             super(itemView);
@@ -70,13 +77,16 @@ public class AdapterHomeBarang extends RecyclerView.Adapter<AdapterHomeBarang.Ho
             harga = itemView.findViewById(R.id.homebarang_harga);
             nama = itemView.findViewById(R.id.homebarang_nama);
             gambar = itemView.findViewById(R.id.homebarang_gambar);
+            stok = itemView.findViewById(R.id.homebarang_stok);
+            diskon = itemView.findViewById(R.id.homebarang_diskon);
             terjual = itemView.findViewById(R.id.homebarang_terjual);
+            deskripsi = itemView.findViewById(R.id.homebarang_deskripsi);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if(adapterItemClick != null){
-                        int pos = getBindingAdapterPosition();
+                        int pos = getAdapterPosition();
                         if (pos != RecyclerView.NO_POSITION){
                             adapterItemClick.onItemClick(pos);
                         }

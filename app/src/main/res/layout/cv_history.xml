@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/cvhist_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/flashdisk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tkode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="kode"
+            android:textColor="@color/veryoldgray"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/cvhist_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cvhist_kode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="000000"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tkode"
+            app:layout_constraintTop_toBottomOf="@id/tkode" />
+
+        <TextView
+            android:id="@+id/ttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="total : "
+            android:textColor="@color/veryoldgray"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/cvhist_kode"
+            app:layout_constraintTop_toBottomOf="@id/cvhist_kode" />
+
+        <TextView
+            android:id="@+id/cvhist_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/oldpurple"
+            app:layout_constraintBottom_toBottomOf="@id/ttotal"
+            app:layout_constraintLeft_toRightOf="@id/ttotal"
+            app:layout_constraintTop_toTopOf="@id/ttotal" />
+        <TextView
+            android:id="@+id/cvhist_tanggal"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="10sp"
+            android:textColor="@color/veryoldgray"
+            android:text="00/00/00"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tbarang"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="10sp"
+            android:textColor="@color/veryoldgray"
+            android:text="  barang"
+            app:layout_constraintBottom_toBottomOf="@id/ttotal"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/cvhist_jumlah"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="10sp"
+            android:textColor="@color/veryoldgray"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="@id/ttotal"
+            app:layout_constraintRight_toLeftOf="@id/tbarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

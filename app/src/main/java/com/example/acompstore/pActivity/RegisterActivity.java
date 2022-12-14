@@ -7,11 +7,13 @@ import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.acompstore.R;
 import com.example.acompstore.databinding.ActivityRegisterBinding;
+import com.example.acompstore.pAdditional.ErrorDialog;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -44,6 +46,9 @@ public class RegisterActivity extends AppCompatActivity {
         if (bind.registerEmail.getText().toString().isEmpty()){
             head = "Masukkan Email";
             checknull = false;
+        }else if(isValidEmail(bind.registerEmail.getText().toString().trim())==false){
+            head = "Email Tidak Valid";
+            checknull = false;
         }else if(bind.registerName.getText().toString().isEmpty()){
             head = "Masukan Nama";
             checknull = false;
@@ -70,21 +75,16 @@ public class RegisterActivity extends AppCompatActivity {
             checknull = true;
         }
         if (checknull==false){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            View view = getLayoutInflater().inflate(R.layout.error_null_dialog, null);
-            builder.setView(view);
-            alert = builder.create();
-            alert.show();
-            nullbterror = view.findViewById(R.id.nulldialog_btclose);
-            nullEmail = view.findViewById(R.id.nulldialog_header);
-            nullbterror.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    alert.dismiss();
-                }
-            });
-            nullEmail.setText(head);
+            String body = "Mohon lengkapi data anda dengan benar";
+            new ErrorDialog(RegisterActivity.this, head, body);
             checknull = false;
+        }
+    }
+    private boolean isValidEmail(String email) {
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

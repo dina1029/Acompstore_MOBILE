@@ -18,7 +18,16 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".LogoutActivity"
+            android:name=".pActivity.RulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SplashScreenTransaksi"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SplashScreen2"
             android:exported="false" />
         <activity
             android:name=".pActivity.SettingKeamananActivity"
@@ -30,19 +39,37 @@
             android:name=".pActivity.SettingAkunActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.SplashScreen"
+            android:name=".pActivity.DetailTransaksiActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.LupaPasswordActivity"
+            android:name=".pActivity.UbahDataAkunActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.NotificationActivity"
+            android:name=".pActivity.UbahAlamatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.UbahKeamananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.SuccessRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.RegisterAlamatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.CheckoutPesananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pActivity.DetailBarangActivity"
             android:exported="false" />
         <activity
             android:name=".pActivity.HomeSearchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".cobaactivity"
             android:exported="false" />
         <activity
             android:name=".pActivity.HomeActivity"
@@ -51,13 +78,13 @@
             android:name=".pActivity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.RegisterAlamatActivity"
+            android:name=".pActivity.SuccessTransactionActivity"
             android:exported="false" />
         <activity
             android:name=".pActivity.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".pActivity.SettingActivity"
+            android:name=".pActivity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

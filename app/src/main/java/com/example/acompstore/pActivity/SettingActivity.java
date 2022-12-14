@@ -1,96 +1,52 @@
 package com.example.acompstore.pActivity;
 
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.view.MenuItem;
 
 import com.example.acompstore.R;
+import com.example.acompstore.pFragment.HistoryFragment;
+import com.example.acompstore.pFragment.HomeFragment;
+import com.example.acompstore.pFragment.NotificationFragment;
+import com.example.acompstore.pFragment.SettingFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class SettingActivity extends AppCompatActivity {
 
+    BottomNavigationView btNav;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        ImageButton btn_1, btn_2;
-        Button btn1, btn2, btn3, btn4;
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        getSupportFragmentManager().beginTransaction().replace(R.id.setting_frmlayout, new SettingFragment()).commit();
 
-        btn_1= (ImageButton) findViewById(R.id.btn_ker);
-        btn_1.setOnClickListener(new View.OnClickListener() {
+        btNav = findViewById(R.id.home_btnav);
+        btNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selected = null;
+                switch (item.getItemId()) {
+                    case R.id.menuhome_home:
+                        selected = new HomeFragment();
+                        break;
+                    case R.id.menuhome_history:
+                        selected = new HistoryFragment();
+                        break;
+                    case R.id.menuhome_notification:
+                        selected = new NotificationFragment();
+                        break;
+                    case R.id.menuhome_setting:
+                        selected = new SettingFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.setting_frmlayout, selected).commit();
+                return true;
             }
         });
-
-        btn_2 = (ImageButton) findViewById(R.id.btn_cht);
-        btn_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String wpurl = "https://wa.me/+6281333793691?text=Saya memiliki keluhan.....";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(wpurl));
-                startActivity(intent);
-            }
-        });
-
-        btn1 = (Button) findViewById(R.id.btn_akun);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SettingActivity.this, SettingAkunActivity.class));
-            }
-        });
-
-        btn2 = (Button) findViewById(R.id.btn_kmn);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SettingActivity.this, SettingKeamananActivity.class));
-            }
-        });
-
-        btn3 = (Button) findViewById(R.id.btn_as);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SettingActivity.this, SettingAlamatActivity.class));
-            }
-        });
-
-        btn4 = (Button) findViewById(R.id.btn_logout);
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDialog();
-            }
-        });
-    }
-
-    private void showDialog() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setView(R.layout.activity_logout);
-//        alertDialogBuilder.setPositiveButton(new AlertDialog.OnClickListener() {
-//                public void onClick(AlertDialog dialog,int id) {
-//                LoginActivity.this.finish();
-//            }
-//        });
-//        alertDialogBuilder.setNegativeButton(new AlertDialog.Builder().OnClickListener() {
-//                public void OnClick(AlertDialog dialog,int id) {
-//                    dialog.cancel();
-//                }
-//        })
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
     }
 }

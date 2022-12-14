@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txt_alertemail" type="id" />
+    <item name="rela_alertemail" type="id" />
+    <item name="tam_alertemail" type="id" />
+    <item name="txt_alertnama" type="id" />
+    <item name="rela_alertnama" type="id" />
+    <item name="int_alertnama" type="id" />
+    <item name="txt_alertnotelp" type="id" />
+    <item name="rela_alertnotelp" type="id" />
+    <item name="int_alertnotelp" type="id" />
+    <item name="txt_alertpw" type="id" />
+    <item name="rela_alertpw" type="id" />
+    <item name="int_alertpw" type="id" />
+    <item name="btn_simpanakun" type="id" />
+    <item name="btn_batalakun" type="id" />
+    <item name="img_picloading" type="id" />
+    <item name="sirkel_loading" type="id" />
+    <item name="bar_loading" type="id" />
+</resources>

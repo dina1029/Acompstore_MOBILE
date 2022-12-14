@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".pActivity.HomeActivity">
 
+
     <FrameLayout
         android:id="@+id/home_frmlayout"
         android:layout_width="match_parent"
@@ -21,9 +22,9 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_btnav"
+        app:labelVisibilityMode="labeled"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/home_menu" />
-
 
 </LinearLayout>

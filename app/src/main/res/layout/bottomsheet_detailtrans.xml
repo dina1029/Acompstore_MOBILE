@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tbatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Alasan dibatalkan : "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/sheetdetrans_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/sheetdetrans_btconfirm"
+            app:layout_constraintRight_toRightOf="@id/sheetdetrans_btconfirm"
+            app:layout_constraintTop_toBottomOf="@id/tbatal">
+
+            <RadioButton
+                android:id="@+id/sheetdetrans_rbubah"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/oldpurple"
+                android:fontFamily="@font/poppins_regular"
+                android:minHeight="0dp"
+                android:padding="3dp"
+                android:text="Ingin mengubah pesanan"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/sheetdetrans_rbtidakmudah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/oldpurple"
+                android:fontFamily="@font/poppins_regular"
+                android:minHeight="0dp"
+                android:padding="3dp"
+                android:text="Tidak Mudah Melanjutkan Transaksi"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/sheetdetrans_rbmahal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/oldpurple"
+                android:fontFamily="@font/poppins_regular"
+                android:minHeight="0dp"
+                android:padding="3dp"
+                android:text="Harga Terlalu Mahal"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/sheetdetrans_rbtidakmembeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/oldpurple"
+                android:fontFamily="@font/poppins_regular"
+                android:minHeight="0dp"
+                android:padding="3dp"
+                android:text="Tidak Ingin Membeli Lagi"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sheetdetrans_btconfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radius3"
+            android:backgroundTint="@color/oldpurple"
+            android:clickable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:minHeight="0dp"
+            android:padding="8dp"
+            android:text="Konfirmasi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sheetdetrans_radiogroup"
+            app:layout_constraintWidth_percent="0.8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

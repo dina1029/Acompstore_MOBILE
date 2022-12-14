@@ -3,60 +3,158 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/bg_buttonsetting.xml" value="0.1695" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/ic_arrowbackblack.xml" value="0.122" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/ic_arrowbackwhite.xml" value="0.1695" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/radius25.xml" value="0.1015" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable-v24/strokeradius15.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/bg_btcheckout.xml" value="0.1275" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/bg_inputlogin.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/bg_tophome.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_account_white.xml" value="0.1345" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_address.xml" value="0.1695" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_arrowback.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_cart.xml" value="0.122" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_cartgray.xml" value="0.122" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_logout.xml" value="0.1695" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_person.xml" value="0.1695" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_reporttransaction.xml" value="0.1695" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/ic_security.xml" value="0.1695" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius10.xml" value="0.107" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius2.xml" value="0.16" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius3.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/radius5.xml" value="0.122" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/rounded_dialog.xml" value="0.1425" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/drawable/strokeradius15.xml" value="0.107" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/font/fonts.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_checkout_pesanan.xml" value="0.33" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_cobaactivity.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_detail_barang.xml" value="0.27701863354037265" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_detail_transaksi.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_home.xml" value="0.21" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_home_search.xml" value="0.2" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_register_alamat.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_setting_akun.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_setting_fragment.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_success_register.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_success_transaction.xml" value="0.22" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_ubah_data_akun.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/activity_ubah_keamanan.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/bottomsheet_detailtrans.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_cart.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_checkout.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_detailbarang.xml" value="0.5" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_history.xml" value="0.28051391862955033" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_homebarang.xml" value="0.3543307086614173" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_homejenis.xml" value="0.9" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/cv_pengiriman.xml" value="0.33" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/error_null_dialog.xml" value="0.21" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_history.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_home.xml" value="0.21" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_history.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_home.xml" value="0.2098360655737705" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_notification.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_register_alamat.xml" value="0.21" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_setting.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/fragment_setting.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/konfirmasi_transaksi_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/logout_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/layout/pengiriman_dialog.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStore/app/src/main/res/menu/home_menu.xml" value="0.19895833333333332" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/button.xml" value="0.1855" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/cardborder.xml" value="0.1855" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/cardborder2.xml" value="0.1855" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/grdn1.xml" value="0.1855" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/ic_notification.xml" value="0.138" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/drawable/ic_notification2.xml" value="0.138" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_home.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_home_search.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_logout.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_lupa_password.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_notification.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_register_alamat.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_akun.xml" value="0.22530996152201796" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_alamat.xml" value="0.22530996152201796" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_setting_keamanan.xml" value="0.22530996152201796" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/bottom_nav_menu.xml" value="0.2734375" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/cv_homebarang.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/layout/error_null_dialog.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Acompstore-master/app/src/main/res/menu/home_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/btn_radio_notselected.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/btn_radio_selected.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/null_radio_button.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/radio_selector.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/radius10.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable/strokeradius15.xml" value="0.1425" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_checkout_pesanan.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_detail_barang.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_detail_transaksi.xml" value="0.25396825396825395" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_home.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_home_search.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_logout.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_register_alamat.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting_akun.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting_alamat.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting_keamanan.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_splash_screen2.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_splash_screen_transaksi.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_ubah_data_akun.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_ubah_keamanan.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_change_account.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_change_keamanan.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_ubah_alamat.xml" value="0.26785714285714285" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/bottomsheet_detailtrans.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_homejenis.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_notification.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/error_null_dialog.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_history.xml" value="0.22" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_notification.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/logout_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/pengiriman_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_kosongpassword.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_loginberhasil.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_logingagal.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_salahpassword.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_servererror.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_transaksiberhasil.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_transaksigagal.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_ubah.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/menu/home_menu.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/fragment_setting.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/drawable-v24/radius25.xml" value="0.181" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_cart.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_checkout_pesanan.xml" value="0.3684603886397608" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_detail_barang.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_detail_transaksi.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_forgot_password.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_home.xml" value="0.1431159420289855" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_rules.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting_akun.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_setting_keamanan.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_splash_screen2.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_splash_screen_transaksi.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_success_transaction.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/activity_xmltest.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_change_account.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_change_keamanan.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/alert_salah_password.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/bottomsheet_detailtrans.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_cart.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_detailbarang.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_history.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/cv_notification.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_history.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_notification.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/konfirmasi_transaksi_dialog.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/logout_dialog.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_kosongpassword.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_loginberhasil.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_logingagal.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_servererror.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_transaksiberhasil.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_transaksigagal.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinal/app/src/main/res/layout/toast_ubah.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/activity_splash_screen2.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/fragment_setting.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/toast_datakosong.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/toast_kosongpassword.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/toast_notupdate.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AcompStoreFinalS/app/src/main/res/layout/toast_pwerror.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

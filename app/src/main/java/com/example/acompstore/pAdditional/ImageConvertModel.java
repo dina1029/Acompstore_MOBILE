@@ -22,7 +22,7 @@ public class ImageConvertModel {
         Picasso.with(ctx).
                 load(Apiretro.base_url+"images/"+url)
                 .fit()
-                .centerCrop()
+                .centerInside()
                 .into(imageViewiewgambar);
     }
 }
